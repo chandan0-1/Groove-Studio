@@ -43,7 +43,7 @@
 
 
   <!-- Display Error page -->
-  <div id="top-three-display">
+  <div id="top-three-poster">
     
     <div class="one design"></div>
 
@@ -204,79 +204,133 @@
             </div>
 
 
-
+  <!-- Aside section containing Queued and fav selected song -->
   <aside id="aside">
-    <h2 id="Queue">Queue</h2>
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>01</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">Despacito</h3>
-        <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+      <h2 id="Queue">Queue</h2>
+
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>01</p></div>
+          <img class="song-logo" src="Images/Queue/despacito.jpeg">
+          <div class="song-details">
+              <h3 class="song-title">Despacito</h3>
+              <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+          </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>02</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">Shape Of You</h3>
-        <p class="singer-name">ED Sheeran</p>
+      <div class="Queue-song-container">
+        <div class="serial-no" ><p>02</p></div>
+          <img class="song-logo" src="Images/Queue/despacito.jpeg">
+          <div class="song-details">
+            <h3 class="song-title">Shape Of You</h3>
+            <p class="singer-name">ED Sheeran</p>
+          </div>
+        <div class="heart-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>03</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">Closer</h3>
-        <p class="singer-name">The Chainsmokers</p>
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>03</p></div>
+            <img class="song-logo" src="Images/Queue/despacito.jpeg">
+            <div class="song-details">
+              <h3 class="song-title">Closer</h3>
+              <p class="singer-name">The Chainsmokers</p>
+            </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>04</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">Let Me Love You</h3>
-        <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>04</p></div>
+            <img class="song-logo" src="Images/Queue/despacito.jpeg">
+            <div class="song-details">
+              <h3 class="song-title">Let Me Love You</h3>
+              <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+            </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>05</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">See You Again</h3>
-        <p class="singer-name">Wiz Khalifa</p>
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>05</p></div>
+            <img class="song-logo" src="Images/Queue/despacito.jpeg">
+            <div class="song-details">
+              <h3 class="song-title">See You Again</h3>
+              <p class="singer-name">Wiz Khalifa</p>
+            </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
       </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
 
-    
+      
 
-    <div class="Queue-song-container">
-      <div class="serial-no" ><p>06</p></div>
-      <img class="song-logo" src="Images/Queue/despacito.jpeg">
-      <div class="song-details">
-        <h3 class="song-title">Chained To The Rhythm</h3>
-        <p class="singer-name">Katy Perry ft. Skip Marley</p>
-      </div>
-      <div class="heart-icon"><i class="far fa-heart"></i></div>
-    </div>
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>06</p></div>
+            <img class="song-logo" src="Images/Queue/despacito.jpeg">
+            <div class="song-details">
+              <h3 class="song-title">Chained To The Rhythm</h3>
+              <p class="singer-name">Katy Perry ft. Skip Marley</p>
+            </div>
+            <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+
   </aside>
   
 
+  
+  
   <!-- footer part contains music playback controls button -->
-
-
   <footer>
-    
+
+      <!-- Contains 3 div as flex items -->
+      <div id="songs-info-container">
+          <!-- Image-thumbnail -->
+          <img src="./Images/Queue/despacito.jpeg" alt="Song-name">
+
+          <!-- About the Song -->
+          <div id="song-info">
+              <span id="song-name">Despacito</span>
+              <p id="singer-name">XYZ</p>
+          </div>
+
+          <!-- Heart shape fav icon -->
+            <i class="far fa-heart heart-pos"></i>
+
+      </div>
+
+
+
+      <!-- Middile divison conataining control buttons -->
+      <div id="player-button-container">
+          <div id="player-button-controller">
+              <i class="far fa-random"></i>
+              <i class="far fa-step-backward"></i>
+              <i class="far fa-play-circle play-button"></i>
+              <i class="far fa-step-forward"></i>
+              <i class="far fa-repeat-alt"></i>
+          </div>
+
+          <!-- song timer(seeker) container -->
+          <div class="slidecontainer">
+              <p>1:09</p>
+              <input id="range" type="range" min="1" max="100" value="50">
+              <p>4:36</p>              
+          </div>
+      </div>
+
+
+      <!-- Third Div contaitng volume and fullscreen icons -->
+      <div id="volume-buttom-container">
+
+            <a href=""><i class="far fa-th-list"></i></a>
+            <a href=""><i class="far fa-headphones-alt"></i></a>
+            <a href="#"><i class="far fa-volume"></i></a>
+
+            <!-- Volume Slider -->
+            <input id="volume-slider" type="range" min="1" max="50" value="35">
+            <i class="far fa-expand"></i>
+
+      </div>
+
   </footer>
+
+
 </body>
 </html>
