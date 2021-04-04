@@ -2,8 +2,8 @@ body{
   background-color: #0c1027;
   margin-left: 20px;
   padding-bottom: 15vh;
-  /* background-image: url(/Images/background-image.jpg); */
 }
+
 
 :root{
   --white-shade:#b8b9ba;
@@ -121,7 +121,7 @@ body{
 
 
 .one{
-  background-image: url("/Images/Poster/chillout.jpg");
+  background-image: url("./Images/Poster/chillout.jpg");
   
 }
 .two{
@@ -250,6 +250,7 @@ body{
   width: 160px;
   border-radius: 50%;
 }
+
 .Artist-style{
   display: block;
   justify-content: flex-end;
@@ -263,7 +264,36 @@ body{
   letter-spacing: 1px;
   margin-top: 5px;
 }
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+#Popular-Artist-conatiner img:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+
+  animation: 1s bounce ;
+
+
+  border: 3px dotted #59a1ff;
+  color: #ff7a59;
+  background: #fff;
+  opacity:0.8;
+
+}
 
 /* Aside Section  */
 #aside{
@@ -423,14 +453,14 @@ body{
 .theme-content p {
 	text-align: center;
 	position: relative;
-	top: -9.25vw;
+	top: -8.75vw;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	background-image: linear-gradient(
 		0deg,
 		rgb(162, 0, 255) -66%,
@@ -448,9 +478,57 @@ body{
 }
 
 
+/* <!---------------------------Latest Hindi Section-----------------> */
 
+#Latest-Hindi-conatiner{
+  display: flex;
+  flex-wrap: wrap;
+  width:66%;
+  justify-content: space-around;
+  position: relative;
+  left:4vw;
+}
 
+#Latest-Hindi-conatiner img{
+  height:14vh;
+  width: 20vh;
+  border-radius: 5%;
+}
 
+.latest-song-style{
+  opacity: 0.8;
+  margin: 0.8vh;
+  display: block;
+  justify-content: flex-end;
+  /* height:200px; */
+  /* width: 160px; */
+}
+.latest-song-style h3{
+  text-align: left;
+  color:rgb(219, 211, 211);
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 90%;
+  letter-spacing: 2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.latest-song-style p{
+  text-align: left;
+  color:white;
+  letter-spacing: 1px;
+  margin-top: -7%;
+  color:var(--white-shade);
+  font-size: 70%;
+  letter-spacing: 2px;
+}
+.latest-song-style:hover{
+  opacity: 1;
+  /* height:110%; */
+  /* border: solid 1px #47c1fa; */
+  /* border-radius: 2px; */
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  box-shadow: 5px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+}
 /* Footer part Including the music playback button */
 
 footer{
@@ -586,6 +664,9 @@ footer{
   color:#b3b3b3;
 }
 
+#volume-buttom-container i{
+  color:var(--white-shade);
+}
 #volume-slider{
   border: solid 0.1vh #47c1fa;
   border-radius: 8px;
