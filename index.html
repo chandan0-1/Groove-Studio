@@ -9,8 +9,12 @@
   <!-- Adding Logo in the Tab bar -->
   <link rel = "icon" href ="/Images/Logo/cc.png" type = "image/x-icon">
 
-  <!-- Linking CSS FIle -->
+  <!-- Linking main CSS FIle -->
   <link rel="stylesheet" href="style.css" >
+  
+  <!-- Linking resposive stylesheet -->
+  <link rel="stylesheet" href="./Assest/resposive.css"
+
   <!-- Adding CDN link of font-awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -45,15 +49,16 @@
   <!-- Display Error page -->
   <div id="top-three-poster">
     
+    
     <div class="one design"></div>
-
-    <div class="two design">
+    
+    <div class="two design ">
       <h2>HIP HOP</h2>
       <h1>BEATS</h1>
     </div>
-
     <div class="three design"></div>
 
+    
     <!-- <img class="three design" src="poster3.jpg" > -->
   </div>
 
@@ -127,36 +132,36 @@
       <div id="Popular-Artist-conatiner">
 
         <div class="Artist-style">
-            <img src="Images/Artists/eminem.jpg">
-            <h3>Eminem</h3>
+            <a href="" ><img src="Images/Artists/eminem.jpg"></a>
+            <p>Eminem</p>
         </div>
 
         <div class="Artist-style">
-            <img src="Images/Artists/billie eilish.jpg">
-            <h3>Billie Eilish</h3>
+            <a href="" ><img src="Images/Artists/billie eilish.jpg"></a>
+            <p>Billie Eilish</p>
         </div>
 
         <div class="Artist-style">
-            <img src="Images/Artists/ed.jpeg">
-            <h3>Ed Sheeran</h3>
+            <a href="" ><img src="Images/Artists/ed.jpeg"></a>
+            <p>Ed Sheeran</p>
         </div>
 
         <div class="Artist-style">
-            <img src="Images/Artists/adele.jpg">
-            <h3>Adele</h3>
+            <a href="" ><img src="Images/Artists/adele.jpg"></a>
+            <p>Adele</p>
         </div>
 
 
         <div class="Artist-style">
-            <img src="Images/Artists/zyan.jpeg">
-            <h3>Zyan</h3>
+            <a href="" ><img src="Images/Artists/zyan.jpeg"></a>
+            <p>Zyan</p>
         </div>
 
         <div class="Artist-style">
-            <img src="Images/Artists/bruno mars.jpg">
-            <h3>Bruno Mars</h3>
+            <a href="" ><img src="Images/Artists/bruno mars.jpg"></a>
+            <p>Bruno Mars</p>
         </div>
-    </div></br>
+    </div>
 
             
   <!------------- Stations Section containing categories of music ------- -->
@@ -210,6 +215,24 @@
                 </div>
             </div>
 
+
+  <!---------------------------Music Types with Poster and headings after stations sections ----------------->  
+    <div id="music-type-container">
+        <a href=""><div class="inner-Div">
+            <img src="./Images/Music Types/1.jpg">
+        </div></a>
+
+        <a href=""><div class="inner-Div">
+            <img src="./Images/Music Types/6.jpeg">
+        </div></a>
+
+        <a href=""><div class="inner-Div">
+          <img src="./Images/Music Types/4.png">
+        </div></a>
+
+    </div>
+
+    
   <!---------------------------Latest Hindi Section----------------->
     <h1 class="Intro-of-div">Latest Hindi</h1>
         <div id="Latest-Hindi-conatiner">
@@ -298,7 +321,18 @@
 
 <!---------------------- Aside section containing Queued and fav selected song ----------------->
   <aside id="aside">
-    <h2 id="Queue">Queue</h2>
+    <div id="aside-info">
+        <span id="Header">My Playlist</span>
+
+        <div id="queue-data-list">
+            <select>
+                <option value="">Queue</option>
+                <option>Playlist</option>
+            </select>
+        </div>
+  </div>
+
+
     <div id="Aside">
 
       <!-- -------------first song in the Queue Section ------------->
@@ -366,7 +400,7 @@
           <div class="serial-no" ><p>04</p></div>
 
           <div class="song-logo-div"> 
-              <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+              <img class="song-logo" src="./Images/Queue/letme.jpeg">
               <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg">
           </div>
 
@@ -386,7 +420,7 @@
               <div class="serial-no" ><p>05</p></div>
 
               <div class="song-logo-div" > 
-                  <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+                  <img class="song-logo" src="./Images/Queue/see.jpeg">
                   <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
               </div>
 
@@ -407,13 +441,13 @@
           <div class="serial-no" ><p>06</p></div>
 
           <div class="song-logo-div" > <a href="">
-              <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+              <img class="song-logo" src="./Images/Queue/chain.jpeg">
               <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
           </div>
 
           <div class="song-details">
-              <h3 class="song-title">Chained To The Rhythm</h3>
-              <p class="singer-name">Katy Perry ft. Skip Marley</p>
+              <h3 class="song-title">Alan Walker: DarkSide</h3>
+              <p class="singer-name">ft. Au/Ra and Tomine Harket</p>
             </a>
           </div>
           <div class="heart-icon"><i class="far fa-heart"></i></div>
@@ -422,16 +456,16 @@
 
   <!-- -------------Songs list in the Queue Section ------------->
         <div class="Queue-song-container">
-          <div class="serial-no" ><p>06</p></div>
+          <div class="serial-no" ><p>07</p></div>
 
           <div class="song-logo-div" > <a href="">
-              <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+              <img class="song-logo" src="./Images/Queue/dyn.jpeg">
               <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
           </div>
 
           <div class="song-details">
-              <h3 class="song-title">Chained To The Rhythm</h3>
-              <p class="singer-name">Katy Perry ft. Skip Marley</p>
+              <h3 class="song-title">Dynamite</h3>
+              <p class="singer-name">BTS</p>
             </a>
           </div>
           <div class="heart-icon"><i class="far fa-heart"></i></div>
@@ -440,16 +474,16 @@
 
   <!-- -------------Songs list in the Queue Section ------------->
         <div class="Queue-song-container">
-          <div class="serial-no" ><p>06</p></div>
+          <div class="serial-no" ><p>08</p></div>
 
           <div class="song-logo-div" > <a href="">
-              <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+              <img class="song-logo" src="./Images/Queue/waka.jpeg">
               <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
           </div>
 
           <div class="song-details">
-              <h3 class="song-title">Chained To The Rhythm</h3>
-              <p class="singer-name">Katy Perry ft. Skip Marley</p>
+              <h3 class="song-title">Waka Waka</h3>
+              <p class="singer-name">Sakira</p>
             </a>
           </div>
           <div class="heart-icon"><i class="far fa-heart"></i></div>
@@ -458,20 +492,41 @@
 
 <!-- -------------Songs list in the Queue Section ------------->
         <div class="Queue-song-container">
-          <div class="serial-no" ><p>06</p></div>
+          <div class="serial-no" ><p>09</p></div>
 
           <div class="song-logo-div" > <a href="">
-              <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+              <img class="song-logo" src="./Images/Queue/cheap.png">
               <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
           </div>
 
           <div class="song-details">
-              <h3 class="song-title">Chained To The Rhythm</h3>
-              <p class="singer-name">Katy Perry ft. Skip Marley</p>
+              <h3 class="song-title">Cheap Thrills</h3>
+              <p class="singer-name">Sia</p>
             </a>
           </div>
           <div class="heart-icon"><i class="far fa-heart"></i></div>
         </div>
+
+        
+  <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>10</p></div>
+
+              <div class="song-logo-div" > 
+                  <img class="song-logo" src="./Images/Queue/us.jpeg">
+                  <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+              </div>
+
+              <div class="song-details">
+                <h3 class="song-title">Used to be</h3>
+                <p class="singer-name">Wiz Khalifa</p>
+                </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+        </a>
+
+
       </div>
   </aside>
   
