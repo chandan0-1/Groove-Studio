@@ -1,0 +1,941 @@
+body{
+  background-color: #0c1027;
+  margin-left: 20px;
+  padding-bottom: 15vh;
+}
+
+
+:root{
+  --white-shade:#b8b9ba;
+}
+
+
+
+/* Some Frequently used class for multiple element */
+.Intro-of-div{
+  color:white;
+  letter-spacing: 2px;
+  font-size:2.7vh;
+  margin-left: 3%;
+  margin-top: 5vh;
+  color:var(--white-shade);
+
+}
+
+/* ------------Header part Including log,Favourites,serachbar */
+header{
+  /* background-color: red; */
+  display: flex;
+  width:90vw;
+  height:6vw;
+  margin: 2vh 0px 0px 3vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 100p; */
+}
+#logo{
+  display: flex;
+}
+#logo-image{
+  width:5vw;
+  height:5vw;
+  animation: rotateicon 1s ease-in-out infinite  ;
+  
+}
+
+@keyframes rotateicon{
+  from {
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+  #Ninja-Studio-text{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+@keyframes fade-in-out{
+  from {
+    opacity: 1;
+  }
+  20%{
+    opacity: 0.8;
+    color: aquamarine;
+  }
+  45%{
+    color: rgb(78, 250, 136);
+    opacity: 0.6;
+  }
+  60%{
+    color:rgb(246, 131, 131);
+    opacity: 0.4;
+  }
+  80%{
+    color:rgb(114, 209, 253)
+    opacity: 0.6;
+  }
+  to{
+    color:#47fa74
+    opacity:0.5;
+  }
+}
+
+#ninja{
+  font-family:'Lucida Sans', Verdana, sans-serif;
+  font-size: 1.7vw;
+  color:white;
+  margin-left: 1.4vw;
+  letter-spacing: 2px;
+  animation: fade-in-out 2.5s ease-in-out infinite alternate;
+}
+
+#studio{
+  margin-left: 1vw;
+  color:white;
+  font-size: 1.8vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.5vh;
+  animation: fade-in-out 2.5s ease-in-out infinite alternate;
+}
+
+#Favourites-div{
+  margin-top: -1%;
+  width:6vw;
+  /* height: 3vw; */
+  /* background-color: white; */
+}
+#Favourites{
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  color:white;
+  font-family: Arial,'Times New Roman', Times, serif;
+  animation: fav-rotate 2.5s ease-in-out infinite alternate;
+  text-shadow: 1px 1px 4px #1dfd98;
+}
+
+@keyframes fav-rotate{
+  from {
+    color:#b6e7fa;
+    transform:rotateY(0) ;
+  }
+  
+  50%{
+    color:#f83c4b;
+    transform:rotateY(180deg) ;
+  }
+  to{
+    position: relative;
+    text-shadow:0.6vh 1.6vh white;
+    color:rgb(29, 248, 175);
+    font-size: 0.8vw;
+    transform: rotateY(360deg);
+    /* transform:rotate(360deg); */
+  }
+}
+
+
+/* Search-bar Container from line no 43 to 69 */
+#search-bar-container{
+  height: 2.9vw;
+  width:25vw;
+  display:flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+#search-bar{
+  /* position: relative; */
+  height: 2.4vw;
+  width:20vw;
+  border-radius: 20px;
+  background-color: #12193e;
+  font-size: 1vw;
+  border:none;
+  padding-left: 45px;
+  letter-spacing: 2px;
+  color:white;
+  margin-left: -2vw;
+
+}
+#search-icon{
+  position: relative;
+  color:#93a8b3;
+  /* margin-top: 10px; */
+  margin-top: 1vh;
+  font-size: 1.2vw;
+}
+
+#microphone-icon{
+  color:#93a8b3;
+  margin-left:-2vw;
+  margin-top: 8px;
+  font-size: 1.2vw;
+}
+
+/* Bell-Icon in header part */
+
+#bell-icon{
+  /* position: absolute; */
+  right:100px;
+  color:white;
+  margin-left: 80px;
+  font-size: 1.5vw;
+  top:40px;
+  right:15%;
+  animation: rotatebellicon 0.6s ease-in-out  infinite  alternate;
+}
+
+@keyframes rotatebellicon{
+  from {
+    transform:rotate(-10deg) scale(1.2);
+  }
+
+  to{
+    transform:rotate(10deg);
+  }
+}
+
+#profile-container{
+  /* position: absolute; */
+  /* right:300px; */
+  /* top:10px; */
+  /* width:6vw;
+  height:6w;
+  background-color: red; */
+}
+
+/* <!-- Profile-pic --> */
+#profile{
+  /* right:5vw;
+  position: fixed; */
+  width:4.5vw;
+  height:4.5vw;
+  border-radius: 50%;
+  /* top:26px; */
+  /* right:5%; */
+}
+
+
+
+.one{
+  background-image: url("./Images/Poster/chillout.jpg");
+  
+}
+.two{
+  position: relative;
+  /* left:-20vw; */
+  float: inline-start;
+  width: 32vw;
+  height: 17vw;
+  font-size: 1.3rem;
+  display: inline;
+  text-shadow: 1px 2px 15px #c0b8c0;
+  background-image: url(./Images/Poster/poster2.jpg);
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
+  letter-spacing: 2px;
+  transition:0.5s ease-in-out 0.1s;
+  /* object-fit:contain; */
+  border:solid 1px rgb(158, 158, 158);
+  background-size:cover; 
+}
+
+.two h2{
+  color:#e6eaeb;
+  margin-top: 30px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.two h1{
+  text-align: center;
+  color:#fcd5d6;
+  margin-top: 8%;
+  font-family:'Courier New', Courier, monospace;
+}
+
+
+.three{
+  position: relative;
+  /* left:26vw; */
+  /* left:26vw; */
+  background-image: url(./Images/Poster/party-night2.jpg);
+  object-fit:cover;
+}
+
+#top-three-poster{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 2.8vw;
+  width: 66vw;
+  margin-top: 3px;
+  height:17vw;
+  /* background-color: red; */
+}
+
+.design{
+  width: 21vw;
+	height: 14.5vw;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
+  letter-spacing: 2px;
+  transition:0.5s ease-in-out 0.1s;
+  object-fit:contain;
+  border:solid 1px rgb(158, 158, 158);
+  background-size:cover; 
+}
+
+.design:hover{
+  font-size: larger;
+  text-shadow: 1px 2px 15px #c0b8c0;
+  width: 75%;
+  height: 350px;
+  box-shadow:inset 1px 2px 10px 1px rgb(194, 124, 211);
+}
+
+
+
+/* Latest Release Display Section  */
+
+#Latest-Release{
+  display: flex;
+  display: ;
+  flex-wrap: wrap;
+  width:62%;
+  margin-left: 4%;
+  justify-content:space-around;
+}
+
+.Latest-Release-container{
+  display: flex;
+  height:20%;
+  width:40%;
+  margin:30px;
+}
+.Latest-Release-Image{
+  width:30%;
+  height: 100px;
+  border-radius: 10px;
+  border-color:solid white 2px;
+}
+
+.Latest-Release-info{
+  margin-left: 8%;
+  margin-top:-10px;
+}
+
+.title-name{
+  color:white;
+}
+
+.artist-name{
+  color:var(--white-shade);
+  font-size: 18px;
+}
+
+.duration{
+  margin-left: 28%;
+  margin-top: 20px;
+  color:var(--white-shade);
+  font-size: 1.2rem;
+}
+
+.duration p{
+  font-size:18px;
+}
+
+/* <!------------- Popular Artist Section ---------------> */
+#Popular-Artist-conatiner{
+  display: flex;
+  width:64vw;
+  height: 11vw;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  left:4%;
+}
+
+#Popular-Artist-conatiner img{
+  height:8vw;
+  width: 8vw;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.Artist-style{
+  display: block;
+  justify-content: flex-end;
+  height:8vw;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+.Artist-style p{
+  font-size: 1vw;
+  text-align: center;
+  color:white;
+  letter-spacing: 0.2vh;
+  margin-top: 0.5vh;
+}
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+#Popular-Artist-conatiner img:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+
+  animation: 1s bounce ;
+
+
+  border: 3px dotted #59a1ff;
+  color: #ff7a59;
+  background: #fff;
+  opacity:1;
+
+}
+
+/* --------------------Aside Section------------------  */
+#aside{
+  position: fixed;
+  right:20px;
+  width:24vw;
+  height: auto;
+  /* background-color: red; */
+  top:15vh; 
+  padding-left:2%;
+  height:auto;
+}
+
+
+
+#aside-info{
+  left:4vh;
+  position: relative;
+  width: 100%;
+  height:6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#aside-info span{
+  position: relative;
+  right:1;
+  color:var(--white-shade);
+  font-size:1.1vw;
+  letter-spacing: 1px;
+}
+#queue-data-list{
+  border:1px solid none;
+  
+}
+
+#queue-data-list select{
+  margin-left: -10vw;
+  border-color:var(--white-shade);
+  border-width: 0px;
+  color:aquamarine;
+  font-size: 1vw;
+  height:2.5vw;
+  width:4.9vw;
+  background-color: inherit;
+  
+}
+#queue-data-list option{
+  color:white;
+  background-color: #0c1027;
+}
+
+#Aside{
+  /* top:2vh; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right:20px;
+  height: 68vh;
+  overflow-y: scroll;
+}
+
+#Aside::-webkit-scrollbar {
+  display: none;
+}
+
+#aside a{
+  text-decoration: none;
+}
+
+
+/* Queued Song Container */
+#Queue{
+  font-size: 30px;
+  color:aquamarine
+}
+
+
+.Queue-song-container{
+  height :7vh;
+  width: 95%;
+  display: flex;
+  /* background-color: red; */
+  margin:0.5vh 0px;
+  padding-top:2vh;
+}
+
+.Queue-song-container:hover{
+  height :8vh;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  box-shadow: 5px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+}
+.serial-no{
+  color:white;
+  font-size: 0.9vw;
+}
+.song-logo-div{
+  float:left;
+  position:relative;
+  margin:0px 20px;
+}
+
+.song-logo{
+  position: relative;
+  left:0;
+  width:3.2vw;
+  height:3.2vw;
+  border-radius: 10%;
+  object-fit:fill;
+}
+
+.playy{
+  position : absolute;
+  opacity: 0.9;
+    display:none;
+    top:20%; 
+    width:2vw;
+    margin:0 auto; left:0px;
+    right:0px;
+    z-index:100
+} 
+
+
+.Queue-song-container:hover .playy {
+  display: block;
+} 
+
+.Queue-song-container:hover{
+  opacity: 0.8;
+}
+
+
+
+.song-details{
+  display: inline-block;
+  line-height: 8px;
+  margin-top: -10px;
+}
+
+.song-details a{
+  text-decoration: none;
+}
+.song-title{
+  color:white;
+  font-size:0.86vw;
+  letter-spacing: 1px;
+
+}
+
+
+.singer-name{
+  color:var(--white-shade);
+  font-size: 0.75vw;
+}
+.heart-icon{
+  position: absolute;
+  right:12%;
+  margin-top:18px;
+  color:var(--white-shade);
+  font-size: 0.8vw;
+  display: flex;
+  align-items: center;
+}
+
+.heart-icon:hover{
+  color: red;
+  font-size: 1.1vw;
+}
+
+
+/* music themes */
+.music-themes {
+  margin-left: 3.5vw;
+  margin-top: 5vh;
+	width: 64vw;
+	height: 12vw;
+	box-sizing: border-box;
+  background-color: #101642;  
+	display: flex;
+  border-radius: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+  color:rgb(228, 225, 225);
+}
+
+/* stations */
+.stations {
+  position: absolute;
+  left:6vw;
+  padding:5px;
+}
+
+/* container for theme contents */
+.theme-main {
+  width:100%;
+  margin-left: 14vw;
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+}
+
+/* these divs are for the colourful boxes in the themes section */
+#div1 {
+	width: 11vw;
+	height: 7vw;
+	background-color: yellow;
+}
+#div2 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 9vw;
+	height: 9vw;
+	background-color: yellowgreen;
+}
+#div3 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 7vw;
+	height: 11vw;
+	background-color: orangered;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* logo in the outermost div */
+#div3 img {
+  margin-top: 4vh;
+	width: 5vw;
+	height: 5vw;
+}
+
+/* "stations" text */
+#div3 p {
+	font-size: 1.5vw;
+}
+
+/* images in the music themes section */
+.music-themes div img {
+	width: 7vw;
+	height: 7vw;
+	border-radius: 50%;
+}
+/* this is the sub content of the themes section */
+.theme-content {
+	margin: 5px;
+  /* padding : 5px; */
+	height: 7vw;
+	width: 7vw;
+	text-align: center;
+	border-radius: 100%;
+}
+/* text within the themes section */
+.theme-content p {
+	text-align: center;
+	position: relative;
+	top: -8.75vw;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	font-size: 1.5vw;
+	background-image: linear-gradient(
+		0deg,
+		rgb(162, 0, 255) -66%,
+		rgba(0, 0, 0, 0)
+	);
+	transition: background-image 0.3s;
+}
+/* hovering effects on the contents of the divs inside the themes container */
+.theme-content p:hover {
+	background-image: linear-gradient(
+		0deg,
+		rgb(255, 0, 0) -66%,
+		rgba(0, 0, 0, 0)
+	);
+}
+
+/* <!----------------------Music Types with Poster and headings after stations sections ----------------->   */
+#music-type-container{
+  margin-left: 2.5vw;
+	width: 66vw;
+	height: 14vw;
+	display: flex;
+  border-radius: 10px;
+	flex-direction: column;
+	flex-wrap: wrap;
+  justify-content: center;
+	align-items: center;
+}
+
+.inner-Div img{
+  position: relative;
+  width: 20vw;
+	height: 12.5vw;
+  border-radius: 2%;
+  opacity: 0.8;
+  padding:0.2vh;
+  -moz-border-radius:2px;
+  -webkit-border-radius:1px;
+  box-shadow: 4px 4px 4px 0 rgba(37, 209, 172, 0.2), 0 6px 2px 0 rgba(230, 25, 25, 0.19);
+  border-radius: 5%;
+  border: 0.5px solid rgb(138, 135, 135);
+  transition: 0.5s ease-in-out 0.1s;
+}
+
+.inner-Div img:hover{
+  width: 18vw;
+	height: 11vw;
+  opacity: 0.9;
+  -moz-border-radius:15px;
+  -webkit-border-radius:10px;
+  box-shadow: 8px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+}
+
+/* <!---------------------------Latest Hindi Section-----------------> */
+
+#Latest-Hindi-conatiner{
+  display: flex;
+  flex: row;
+  /* flex-wrap: wrap; */
+  width:66%;
+  justify-content: space-around;
+  position: relative;
+  left:4vw;
+}
+
+#Latest-Hindi-conatiner img{
+  height:7vw;
+  width: 9.3vw;
+  border-radius: 5%;
+}
+
+.latest-song-style{
+  opacity: 0.8;
+  margin: 0.8vh;
+  display: block;
+  justify-content: flex-end;
+}
+
+.latest-song-style h3{
+  text-align: left;
+  color:rgb(219, 211, 211);
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 0.7vw;
+  letter-spacing: 2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.latest-song-style p{
+  text-align: left;
+  color:white;
+  letter-spacing: 1px;
+  margin-top: -7%;
+  color:var(--white-shade);
+  font-size: 0.01vw;
+  letter-spacing: 2px;
+}
+
+.latest-song-style:hover{
+  opacity: 1;
+  -moz-border-radius:15px;
+  -webkit-border-radius:6px;
+  box-shadow: 5px 4px 8px 0 rgba(245, 245, 245, 0.2), 0 6px 20px 0 rgba(248, 247, 247, 0.19);
+}
+
+
+/* -------Footer part Including the music playback button------- */
+
+footer{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  padding:1vh;
+  height: 10vh;
+  width:100vw;
+  background-color: #282828;
+}
+#songs-info-container {
+  display: flex;
+  flex-direction: row;
+  /* width:20vw;
+  height: 10vh; */
+  height:100%;
+  width:22%;
+  /* justify-content: flex-start; */
+  align-items: center;
+  font-size: 40px;
+  /* flex-direction: row; */
+  /* top:0; */
+  /* background-color:green; */
+
+}
+#songs-info-container img{
+  height:8vh;
+  width:9vh;
+  border-radius: 5%;
+  margin-left:2%;
+}
+
+#song-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:70%;
+  width: 25%;
+  margin-left:3vh;
+}
+#song-info #song-name{
+  color:white;
+  font-size: 2.4vh;
+  /* margin-top: -10px; */
+}
+
+#song-info #singer-name{
+  font-size: 1vh;
+  color:#8e8e8e;
+}
+
+.heart-pos{
+  color:#8e8e8e;
+  font-size: 50%;
+  margin-left:8vh;
+}
+.heart-pos:hover{
+  color: rgb(248, 66, 10);
+}
+
+
+/* footer middle part container with range slider and player control buttons */
+#player-button-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:40%;
+
+}
+
+#player-button-controller{
+  height:50%;
+  width:75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  font-size: 1.3vw;
+  color:#b3b3b3;
+  text-decoration: none;
+  
+}
+#player-button-controller a{
+  text-decoration: none;
+  color:var(--white-shade);
+}
+
+.play-button{
+  background-color: inherit;
+  color:#cccccc;
+  font-size: 2.5vw;
+}
+
+.slidecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:90%;
+  color:var(--white-shade);
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  margin-top:-1vh;
+}
+
+#range {
+  background: linear-gradient(to right, #9bcdce 0%, #68d082 50% 80%);
+  border: solid 0.1vh #004f74;
+  border-radius: 8px;
+  height:0.8vh;
+  width: 80%;
+  outline: none;
+  transition: all 450ms ease-in;
+  -webkit-appearance:none;
+  /* transform:scale(1.6); */
+}
+
+#volume-buttom-container{
+  height:100%;
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items:center;
+  justify-content: space-around;
+  font-size: 1.3vw;
+  color:#b3b3b3;
+}
+
+#volume-buttom-container i{
+  color:var(--white-shade);
+}
+#volume-slider{
+  border: solid 0.1vh #47c1fa;
+  border-radius: 8px;
+  height:0.8vh;
+  width: 40%;
+}
