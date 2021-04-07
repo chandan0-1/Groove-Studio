@@ -235,7 +235,7 @@ header{
   font-size: 1.3rem;
   display: inline;
   text-shadow: 1px 2px 15px #c0b8c0;
-  background-image: url(./Images/Poster/poster2.jpg);
+  background-image: url("./Images/Poster/poster2.jpg");
   text-align: center;
   border-radius: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
@@ -265,7 +265,7 @@ header{
   position: relative;
   /* left:26vw; */
   /* left:26vw; */
-  background-image: url(./Images/Poster/party-night2.jpg);
+  background-image: url("./Images/Poster/party-night2.jpg");
   object-fit:cover;
 }
 
