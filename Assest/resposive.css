@@ -1,0 +1,32 @@
+@media screen and ( max-width:1090px) , ( max-height:600px){
+  #aside{
+    width: 0px;
+    height: 0px;
+    font
+  }
+
+  #aside-info #Header,#queue-data-list select{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+  }
+}
+
+
+@media screen and ( max-height:1200px){
+  .song-title,{
+    font-size:1vh
+  }
+
+  .singer-name{
+    font-size: 0.6vh;
+  }
+  
+}
+
+@media screen and ( max-height:1100px){
+  
+  .heart-icon{
+    right:8%;
+  }
+}
