@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Music Player</title>
 
-  <!-- Adding Logo in the Tab bar -->
-  <link rel = "icon" href ="/Images/Logo/cc.png" type = "image/x-icon">
+    <!-- Adding Logo in the Tab bar -->
+    <link rel = "icon" href ="/Images/Logo/cc.png" type = "image/x-icon">
 
-  <!-- Linking main CSS FIle -->
-  <link rel="stylesheet" href="style.css" >
-  
-  <!-- Linking resposive stylesheet -->
-  <link rel="stylesheet" href="./Assest/resposive.css"
+    <!-- Linking main CSS FIle -->
+    <link rel="stylesheet" href="style.css" >
+    
+    <!-- Linking resposive stylesheet -->
+    <link rel="stylesheet" href="./Assest/resposive.css">
 
-  <!-- Adding CDN link of font-awesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Adding CDN link of font-awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
+
+
+
+
+
+<!-----------------------------Starting of Body Part--------------------------------->
+
 <body>
-  <!-- Header part containing logo, search-bar,bell icon, porifle-pic -->
-  <div id="header">
-    <div id="logo">
-      <img id="logo-image" src="Images/Logo/website_logo.svg" alt="Ninja Music Player">
+
+
+
+  <!------------- Header part containing logo, search-bar,bell icon, porifle-pic -------------------->
+    <header>
+
+         <!------------Music Player Logo------------->
+          <div id="logo">
+              <img id="logo-image" src="Images/Logo/website_logo.svg" alt="Ninja Music Player">
+              
+              <div id="Ninja-Studio-text">
+                  <span id="ninja">Ninja</span>
+                  <span id="studio" >Studio</span>
+              </div>
+          </div>
+
+          <!-- <h3 id="Favourites">Favourites</h3> -->
+          <div id="Favourites-div"><h3 id="Favourites">Favourites</h3></div>
+
+          <!------------Search Bar------------->
+          <div id="search-bar-container">
+              <i id="search-icon" class="fas fa-search"></i>
+              <input id="search-bar" type="text" name="" placeholder=" Search">
+              <i id="microphone-icon" class="fas fa-microphone"></i>
+          </div>
+
+          
+          <!------------Bell icon------------->
+          <i id="bell-icon" class="fas fa-bell"></i>
+          
+          <!--------User Profile-pic---------->
+          <img id ="profile" src="./Images/user/mypic.jpg" alt="Profile picture">
+    </header>
+    
+    
+
+
+
+
+
+<!------------------- Display Top three Pictures------------------------------------->
+    <div id="top-three-poster">
+      
+        <div class="one design"></div>      <!--First Poster-->
+        
+        <div class="two design "> <!--Second Poster-->
+            <h2>HIP HOP</h2>
+            <h1>BEATS</h1>
+        </div>
+
+        <div class="three design"></div> <!--Third Poster-->
+
     </div>
-    <div id="Ninja-Stduio-text">
-      <span id="ninja">Ninja</span></br>
-      <span id="studio" >Studio</span>
-    </div>
-
-    <h3 id="Favourites">Favourites</h3>
-
-    <div id="search-bar-container">
-      <input id="search-bar" type="text" name="" placeholder=" Search">
-      <i id="search-icon" class="fas fa-search"></i>
-      <i id="microphone-icon" class="fas fa-microphone"></i>
-    </div>
-
-  </div>
-    
-  <!-- Bell icon -->
-  <i id="bell-icon" class="fas fa-bell"></i>
-
-  <!-- Profile-pic -->
-  <img id ="profile" src="./Images/user/mypic.jpg" alt="Profile picture">
-
-
-  <!-- Display Error page -->
-  <div id="top-three-poster">
-    
-    
-    <div class="one design"></div>
-    
-    <div class="two design ">
-      <h2>HIP HOP</h2>
-      <h1>BEATS</h1>
-    </div>
-    <div class="three design"></div>
-
-    
-    <!-- <img class="three design" src="poster3.jpg" > -->
-  </div>
 
 
 
 
 
-  <!-- Latest-Release Section including 4 tracks -->
+<!---------------------- Latest-Release Section including 4 tracks --------------------->
 
   <h1 class="Intro-of-div">Latest Release</h1>
   <div id="Latest-Release">
@@ -83,6 +103,7 @@
         <p> 4:45</p>
       </div>
     </div>
+
 
     <div class="Latest-Release-container">
       <img class="Latest-Release-Image" src="./Images/LatestRelease/closer.jpeg">
@@ -126,9 +147,9 @@
   </div>
 
 
-    <!-- --------------Popular Artist Section-------------------- -->
+<!------------------------Popular Artist Section------------------------ -->
 
-  <h1 class="Intro-of-div">Popular Artists</h1>
+  <h1 class="Intro-of-div">Popular Artists</h1></br>
       <div id="Popular-Artist-conatiner">
 
         <div class="Artist-style">
@@ -167,8 +188,10 @@
   <!------------- Stations Section containing categories of music ------- -->
           
           <h1 class="Intro-of-div">Stations</h1>
+
               <!-- this is the music themes part, the one with the tri-gradient background -->
               <div class="music-themes">
+
                 <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects  -->
                 <!-- the logo with orange, green and yellow color -->
                 <div class="stations">
@@ -216,28 +239,37 @@
             </div>
 
 
-  <!---------------------------Music Types with Poster and headings after stations sections ----------------->  
-    <div id="music-type-container">
-        <a href=""><div class="inner-Div">
-            <img src="./Images/Music Types/1.jpg">
-        </div></a>
+<!---------------------------Music Types with Poster and headings after stations sections ----------------->  
+    
+    <h1 class="Intro-of-div">Daily Hits</h1></br>
+      <div id="music-type-container">
+        <a href="">
+            <div class="inner-Div">                           <!------First Poster------>
+              <img src="./Images/Music Types/1.jpg">
+            </div>
+        </a>
 
-        <a href=""><div class="inner-Div">
-            <img src="./Images/Music Types/6.jpeg">
-        </div></a>
+        <a href="">
+            <div class="inner-Div">
+                <img src="./Images/Music Types/6.jpeg">       <!------Second Poster------>
+            </div>
+        </a>
 
-        <a href=""><div class="inner-Div">
-          <img src="./Images/Music Types/4.png">
-        </div></a>
-
+        <a href="">
+            <div class="inner-Div">
+                <img src="./Images/Music Types/4.png">         <!------Third Poster------>
+            </div>
+        </a>
     </div>
 
     
-  <!---------------------------Latest Hindi Section----------------->
+<!---------------------------Latest Hindi Section--------------------->
     <h1 class="Intro-of-div">Latest Hindi</h1>
         <div id="Latest-Hindi-conatiner">
         
-              <div class="latest-song-style">
+
+          <!--------------All Divs containing respective assigned song------------>
+              <div class="latest-song-style"> 
                 <a href="#"><img src="./Images/Latest-Hindi/baby-girl.jpeg"></a>
                   <h3>Baby Girl</h3>
                   <p>Jul 22, 2020</p>
@@ -261,7 +293,7 @@
                   <p>Oct 14, 2020</p>
               </div>
         
-        
+
               <div class="latest-song-style">
                 <a href="#"><img src="./Images/Latest-Hindi/diltodk.jpeg"></a>
                   <h3>Dil Tod Ke</h3>
@@ -276,47 +308,47 @@
           </div>
 
 
-    <!---------------------------Latest English Section----------------->
-    <h1 class="Intro-of-div">Latest English</h1>
-        <div id="Latest-Hindi-conatiner">
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/closer.jpeg"></a>
-                  <h3>Closer</h3>
-                  <p>Jul 22, 2020</p>
-              </div>
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/dyn.jpeg"></a>
-                  <h3>BTS Dynamite</h3>
-                  <p>Nov 18, 2020</p>
-              </div>
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/dark.jpeg"></a>
-                  <h3>Dark Side</h3>
-                  <p>Jul 19, 2020</p>
-              </div>
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/waka.jpeg"></a>
-                  <h3>Waka Waka</h3>
-                  <p>Oct 16, 2010</p>
-              </div>
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/cheap.png"></a>
-                  <h3>Cheap Thrills</h3>
-                  <p>Jun 02, 2016</p>
-              </div>
-        
-              <div class="latest-song-style">
-                  <a href="#"><img src="./Images/Latest-English/shape.jpeg"></a>
-                  <h3>Shape of You</h3>
-                  <p>Nov 03, 2020</p>
-              </div>
-        
-          </div></br>
+<!---------------------------Latest English Section----------------->
+      <h1 class="Intro-of-div">Latest English</h1>
+          <div id="Latest-Hindi-conatiner">
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/closer.jpeg"></a>
+                    <h3>Closer</h3>
+                    <p>Jul 22, 2020</p>
+                </div>
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/dyn.jpeg"></a>
+                    <h3>BTS Dynamite</h3>
+                    <p>Nov 18, 2020</p>
+                </div>
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/dark.jpeg"></a>
+                    <h3>Dark Side</h3>
+                    <p>Jul 19, 2020</p>
+                </div>
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/waka.jpeg"></a>
+                    <h3>Waka Waka</h3>
+                    <p>Oct 16, 2010</p>
+                </div>
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/cheap.png"></a>
+                    <h3>Cheap Thrills</h3>
+                    <p>Jun 02, 2016</p>
+                </div>
+          
+                <div class="latest-song-style">
+                    <a href="#"><img src="./Images/Latest-English/shape.jpeg"></a>
+                    <h3>Shape of You</h3>
+                    <p>Nov 03, 2020</p>
+                </div>
+          
+            </div>
 
 
 <!---------------------- Aside section containing Queued and fav selected song ----------------->
@@ -538,8 +570,8 @@
 
       <!-- Contains 3 div as flex items -->
       <div id="songs-info-container">
-        <img src="./Images/Queue/despacito.jpeg" alt="Song-name">
-        <!-- Image-thumbnail -->
+          <img src="./Images/Queue/despacito.jpeg" alt="Song-name">
+          <!-- Image-thumbnail -->
         
           <!-- About the Song -->
           <div id="song-info">
@@ -548,7 +580,7 @@
           </div>
 
           <!-- Heart shape fav icon -->
-            <a href=""><i class="far fa-heart heart-pos"></i></a>
+          <a href=""><i class="far fa-heart heart-pos"></i></a>
 
       </div>
 
