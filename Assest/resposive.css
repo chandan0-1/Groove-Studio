@@ -1,81 +1,98 @@
 @media screen and ( max-width:1090px) , ( max-height:600px){
-  /* Header Part  Search bar ! making its hieght 0 */
-  #search-bar-container,#search-bar{
-    display: none;
-  }
-  #search-icon,#microphone-icon{
-    display: none;
-  }
-  #Favourites{
-    font-size: 0.4vw;
-    animation: none;
-    margin-left: -5vw;
-    color:rgb(9, 214, 88)
-  }
-  #profile{
-    width:7vw;
-    height:7vw;
-    right:4vw;
-  }
+/*--------------- Header Part  Search bar ! making its hieght 0-------------- */
+        #search-bar-container,#search-bar{
+          display: none;
+        }
+        #search-icon,#microphone-icon{
+          display: none;
+        }
+        #Favourites{
+          font-size: 0.5vw;
+          animation: none;
+          margin-left: -5vw;
+          color:rgb(9, 214, 88)
+        }
+        #profile{
+          width:7vw;
+          height:7vw;
+          right:4vw;
+        }
 
-  /* ----------------Aside Queue Section------------------- */
-  #aside{
-    display: none;
-    width: 0px;
-    height: 0px;
-  }
+/* ----------------Aside Queue Section------------------- */
+        #aside{
+          display: none;
+          width: 0px;
+          height: 0px;
+        }
 
-  #aside-info #Header,#queue-data-list select{
-    display: none;
-  }
+        #aside-info #Header,#queue-data-list select{
+          display: none;
+        }
 
-  /*--------------------- Latest Release Section---------------- */
+/*--------------------- Latest Release Section---------------- */
 
-  #top-three-poster{
-    top:3vh;
-    width:92%;
-    /* height: 18vw; */
-  }
+        #top-three-poster{
+          top:3vh;
+          width:92%;
+          /* height: 18vw; */
+        }
   
 
 
   /* -------------------------Popular Artist Section ----------------*/
-  #Popular-Artist-conatiner, .music-themes, #music-type-container, #Latest-Hindi-conatiner, #Latest-English-conatiner{
-    width:92%;
-  }
-  #music-type-container img{
-    margin-left: 2vw;
-    width:26.5vw;
-    height:17vw;
-  }
+        #Popular-Artist-conatiner, .music-themes, #music-type-container, #Latest-Hindi-conatiner, #Latest-English-conatiner{
+          width:92%;
+        }
+        #music-type-container img{
+          margin-left: 2vw;
+          width:26.5vw;
+          height:17vw;
+        }
 
-  /* -------------------------Latest hindi & English Section ----------------*/
+/* -------------------------Latest hindi & English Section ----------------*/
   
-  .latest-song-style h3{
-    transform: scale(0.9);
-    font-size: 1.3vh;
-  }
 
-  #Latest-Release{
-    width:92%;
-  }
-  .Latest-Release-info{
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content:left;
-  }
+        .latest-song-style{
+          text-align: center;
+        }
+        .latest-song-style h3{
+          transform: scale(0.8);
+        }
 
-  .title-name{
-    /* font-size: 0.01vw; */
-    transform: scale(0.7);
-    color:white;
-  }
-  .artist-name{
-    transform: scale(0.5);
-    /* display: none; */
-  }
-  .duration p{
-    display: none;
+        #Latest-Release{
+          width:92%;
+        }
+        .Latest-Release-info{
+          align-content: flex-start;
+          align-items: flex-start;
+          justify-content:left;
+        }
+
+        .title-name{
+          /* font-size: 0.01vw; */
+          transform: scale(0.7);
+          color:white;
+        }
+        .artist-name{
+          transform: scale(0.5);
+          /* display: none; */
+        }
+
+/* -------------------------Footer/Music playback control Section ----------------*/
+        #songs-info-container{
+          transform: scale(0.7);
+        }
+
+
+  #div3 p {
+    position: relative;
+    /* top:-8vh; */
+    transform: scale(0.6);
+      }
+
+  #div3 img{
+    position: relative;
+    top:10%;
   }
 
 }
@@ -103,45 +120,58 @@
 
 
 /* -------------Resposive desing for 600 X and above------- */
-@media screen and ( max-width:700px) {
+@media screen and ( max-width:850px) and (max-height:850px) {
 
-  #bell-icon{
-    display: none;
-  }
-
-  #Ninja-Studio-text{
-    display: inline;
-  }
-
-
-  /* -------for bottom music control player--------- */
-    #volume-buttom-container, #songs-info-container{
+    #bell-icon{
       display: none;
     }
 
-    #player-button-container{
-      width:100%;
-    }
-    #player-button-container i{
-      font-size:3.5vw;
-    }
-    .play-button:hover{
-      font-size:6.9vh;
+    #Ninja-Studio-text{
+      display: inline;
     }
 
+
+    /* -------for bottom music control player--------- */
+      #volume-buttom-container, #songs-info-container{
+        display: none;
+      }
+
+      #player-button-container{
+        width:100%;
+      }
+      #player-button-container i{
+        font-size:3.5vw;
+      }
+      .play-button:hover{
+        font-size:6.9vh;
+      }
+
+      
+    /* -------------------------Latest hindi & English Section ----------------*/
+      .latest-song-style p{
+        display: none;
+      }
+      .latest-song-style h3{
+        transform: scale(0.7);
+      }
+      .Latest-Release-container:hover .playyy {
+        margin-left:-31%;
+        display: block;
+      } 
+
     
-  /* -------------------------Latest hindi & English Section ----------------*/
-    .latest-song-style p{
-      display: none;
-    }
-    
-}
+  }
 
 
   /* -------------Resposive desing for 600 X 600------- */
   /* If window size will be less than 600 X 600 then only controls will be visible */
 @media screen and ( max-width:600px) and (max-height:600px){
 
+/* ------Latest hindi and English songs--- */
+
+      .latest-song-style h3{
+        transform: scale(0.6);
+      }
   #volume-buttom-container, #songs-info-container{
     display: none;
   }
@@ -151,6 +181,10 @@
   }
   #player-button-container i{
     font-size:3vw;
+  }
+  
+  .dropbtn{
+    display: none;
   }
 }
 
