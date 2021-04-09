@@ -14,11 +14,31 @@
 }
 
 
-@media screen and ( max-width:400px) , ( max-height:550px){
-
+@media screen and ( max-width:400px) , ( max-height:400px){
+  #artist-info{
+    width: 92%;
+    height: 33vh;
+  }
  #desc{
-   display: none;
+   font-size: 1vh;
  }
+
+ #artist img{
+   margin-left: 8vw;
+   margin-top: 2vh;
+   height:60vw;
+   width: 60vw;
+ }
+
+ #artist{
+   margin-left: 5vw;
+   display: block;
+ }
+
+ #songs-of-artist{
+   margin-top:25vh;
+ }
+
 }
 
 
@@ -29,8 +49,9 @@
   }
 }
 
-@media screen and ( max-height:300px){
+@media screen and ( max-height:300px) and (max-width:200px){
   #play-all-button{
     display: none;
   }
+
 }

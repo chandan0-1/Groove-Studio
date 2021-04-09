@@ -85,37 +85,36 @@
         }
 
 
-  #div3 p {
-    position: relative;
-    /* top:-8vh; */
-    transform: scale(0.6);
-      }
+        #div3 p {
+          position: relative;
+          transform: scale(0.6);
+            }
 
-  #div3 img{
-    position: relative;
-    top:10%;
-  }
+        #div3 img{
+          position: relative;
+          top:10%;
+        }
 
 }
 
 
 
 @media screen and ( max-height:1200px){
-  .song-title,{
-    font-size:1vh
-  }
+    .song-title,{
+      font-size:1vh
+    }
 
-  .singer-name{
-    font-size: 0.6vh;
+    .singer-name{
+      font-size: 0.6vh;
+    }
+    
   }
-  
-}
 
 @media screen and ( max-height:1100px){
   
-  .heart-icon{
-    right:8%;
-  }
+    .heart-icon{
+      right:8%;
+    }
 }
 
 
@@ -167,22 +166,22 @@
 
 /* ------Latest hindi and English songs--- */
 
-      .latest-song-style h3{
-        transform: scale(0.6);
+          .latest-song-style h3{
+            transform: scale(0.6);
+          }
+      #volume-buttom-container, #songs-info-container{
+        display: none;
       }
-  #volume-buttom-container, #songs-info-container{
-    display: none;
-  }
 
-  #player-button-container{
-    width:100%;
-  }
-  #player-button-container i{
-    font-size:3vw;
-  }
-  
-  .dropbtn{
-    display: none;
-  }
+      #player-button-container{
+        width:100%;
+      }
+      #player-button-container i{
+        font-size:3vw;
+      }
+      
+      .dropbtn{
+        display: none;
+      }
 }
 
