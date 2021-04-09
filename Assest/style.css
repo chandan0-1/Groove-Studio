@@ -228,12 +228,11 @@ header{
 }
 .two{
   position: relative;
-  /* left:-20vw; */
-  float: inline-start;
+  /* float: inline-start; */
   width: 32vw;
   height: 17vw;
   font-size: 1.3rem;
-  display: inline;
+  display: inline-block;
   text-shadow: 1px 2px 15px #c0b8c0;
   background-image: url("./Images/Poster/poster2.jpg");
   text-align: center;
@@ -241,11 +240,15 @@ header{
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS';
   letter-spacing: 2px;
   transition:0.5s ease-in-out 0.1s;
-  /* object-fit:contain; */
   border:solid 1px rgb(158, 158, 158);
   background-size:cover; 
 }
 
+/* .two a h2,h1{
+  text-decoration: none;
+  display:inline-block ;
+
+} */
 .two h2{
   color:#e6eaeb;
   margin-top: 30px;
@@ -263,10 +266,9 @@ header{
 
 .three{
   position: relative;
-  /* left:26vw; */
-  /* left:26vw; */
   background-image: url("./Images/Poster/party-night2.jpg");
   object-fit:cover;
+  opacity: 0.8;
 }
 
 #top-three-poster{
@@ -281,6 +283,8 @@ header{
 }
 
 .design{
+  /* opacity: 0.8; */
+  display: flex;
   width: 21vw;
 	height: 14.5vw;
   text-align: center;
@@ -294,6 +298,7 @@ header{
 }
 
 .design:hover{
+  opacity: 1;
   font-size: larger;
   text-shadow: 1px 2px 15px #c0b8c0;
   width: 75%;
@@ -670,8 +675,8 @@ header{
 .theme-content {
 	margin: 5px;
   /* padding : 5px; */
-	height: 7vw;
-	width: 7vw;
+	height: 8vw;
+	width: 8vw;
 	text-align: center;
 	border-radius: 100%;
 }
