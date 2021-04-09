@@ -37,8 +37,9 @@ body{
           align-items: center;
         }
 
-        #logo{
+        #logo,a{
           display: flex;
+          text-decoration: none;
         }
 
         #logo-image{
@@ -640,7 +641,7 @@ body{
         }
 
         .song-details{
-          display: inline-block;
+          /* display: inline-block; */
           line-height: 8px;
           margin-top: -10px;
         }

@@ -1,0 +1,36 @@
+@media screen and ( max-width:1090px) , ( max-height:600px){
+
+  #artist{
+    width:92%;
+  }
+  #desc {
+    position: relative;
+    left:0;
+    
+  }
+  #songs-of-artist{
+    width:92%;
+  }
+}
+
+
+@media screen and ( max-width:400px) , ( max-height:550px){
+
+ #desc{
+   display: none;
+ }
+}
+
+
+@media screen and ( max-height:400px){
+  #artist-info h5{
+    display: none;
+    font-size: 0px;
+  }
+}
+
+@media screen and ( max-height:300px){
+  #play-all-button{
+    display: none;
+  }
+}

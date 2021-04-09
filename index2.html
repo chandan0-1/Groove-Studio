@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Music Player</title>
+
+  <!-- Adding Logo in the Tab bar -->
+  <link rel = "icon" href ="./Images/Logo/fav.png" type = "image/x-icon">
+
+  <!-- Linking CSS FIle -->
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="./Assest/style2.css" >
+  
+  <!-- Linking resposive stylesheet -->
+  <link rel="stylesheet" href="./Assest/resposive.css">
+  <link rel="stylesheet" href="./Assest/resposive2.css">
+
+  <!-- Adding CDN link of font-awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+  <!-----------------------------Starting of Body Part--------------------------------->
+
+<body>
+
+
+
+  <!------------- Header part containing logo, search-bar,bell icon, porifle-pic -------------------->
+    <header>
+
+         <!------------Music Player Logo------------->
+         <a href="index.html"> <div id="logo">
+              <img id="logo-image" src="Images/Logo/cc.png" alt="Ninja Music Player">
+              
+              <div id="Ninja-Studio-text">
+                  <span id="ninja">Groove</span>
+                  <span id="studio" >Studio</span>
+              </div>
+          </div> </a>
+
+          <!-- <h3 id="Favourites">Favourites</h3> -->
+          <div id="Favourites-div"><h3 id="Favourites">Favourites</h3></div>
+
+          <!------------Search Bar------------->
+          <div id="search-bar-container">
+              <i id="search-icon" class="fas fa-search"></i>
+              <input id="search-bar" type="text" name="" placeholder=" Search">
+              <i id="microphone-icon" class="fas fa-microphone"></i>
+          </div>
+
+          
+          <!------------Bell icon------------->
+          <i id="bell-icon" class="fas fa-bell"></i>
+          
+          <!--------User Profile-pic---------->
+          <img id ="profile" src="./Images/user/mypic.jpg" alt="Profile picture">
+    </header>
+
+
+
+ <!------------------ Artist Description Section divided in to two parts------------------------->
+    <div id="artist">
+        <img src="./Images/Artist Name/Alan.jpg">
+
+        <div id="artist-info">
+
+            <span id=description>
+                <span> <h1>Alan Walker</h1> </span>
+                <span><p id="follower">39M Followers</p></span>
+            </span>
+
+            <h4>British Band</h4>
+
+
+            <div id="desc">
+                Alan Olav Walker is an English-Norwegian 
+                DJ and record producer. In 2015, Walker received international acclaim after releasing the single "Faded", 
+                which received platinum certifications in 14 countries. In 2020, 
+                he was ranked 26th on DJ Mag. He released his 
+                debut studio album, Different World, in 2018.
+            </div>
+
+            <div id="play-all-button">
+                <button>Play All</button>
+                <span><a href="https://www.youtube.com/c/Alanwalkermusic/featured" target="_blank"> Follow</p></a>      
+            </div>
+
+            <h5>112 Tracks | 48 Albums</h5>
+                
+        </div>
+    </div>
+
+    
+    
+    
+    
+    <div id="songs-of-artist">
+        <div id="Aside">
+
+    <!-- -------------first song in the Queue Section ------------->
+                <a href="">
+                    <div class="Queue-song-container">
+                        <div class="serial-no" ><p>01</p></div>
+        
+                        <div class="song-logo-div" > 
+                            <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+                            <img class="playy" src="./Images/Logo/blue.svg"  >   </div>
+        
+                        <div class="song-details">
+                            <h3 class="song-title">Despacito</h3>
+                            <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+                        </div>
+                        <div class="heart-icon"><i class="far fa-heart"></i></div>
+                    </div>
+                </a>
+        
+        
+        
+        <!-- -------------Songs list in the Queue Section ------------->
+                <a href="">
+                <div class="Queue-song-container">
+                    <div class="serial-no" ><p>02</p></div>
+        
+                    <div class="song-logo-div" > 
+                        <img class="song-logo" src="./Images/Queue/shape.jpeg">
+                        <img class="playy" src="./Images/Logo/hov-red.svg"  >
+                    </div>
+        
+                    <div class="song-details">
+                        <h3 class="song-title">Shape Of You</h3>
+                        <p class="singer-name">ED Sheeran</p>
+                        </div>
+                    <div class="heart-icon"><i class="far fa-heart"></i></div>
+                </div>
+                </a>
+        
+                
+        
+        <!-- -------------Songs list in the Queue Section ------------->
+                <a href="">
+                <div class="Queue-song-container">
+                    <div class="serial-no" ><p>03</p></div>
+        
+                    <div class="song-logo-div" > 
+                        <img class="song-logo" src="./Images/Queue/closer.jpeg">
+                        <img class="playy" src="./Images/Logo/hov-red.svg"  >
+                    </div>
+        
+                    <div class="song-details">
+                        <h3 class="song-title">Closer</h3>
+                        <p class="singer-name">The Chainsmokers</p>
+                    </div>
+                    <div class="heart-icon"><i class="far fa-heart"></i></div>
+                </div>
+                </a>
+        
+        
+            <!-- -------------Songs list in the Queue Section ------------->
+                <a href="#">
+                    <div class="Queue-song-container"> 
+                    <div class="serial-no" ><p>04</p></div>
+        
+                    <div class="song-logo-div"> 
+                        <img class="song-logo" src="./Images/Queue/letme.jpeg">
+                        <img class="playy" src="./Images/Logo/hov-red.svg">
+                    </div>
+        
+                    <div class="song-details">
+                        <h3 class="song-title">Let Me Love You</h3>
+                        <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+                    </div>
+        
+                        <div class="heart-icon"><i class="far fa-heart"></i></div>
+                    </div>
+                </a>
+        
+            <!-- -------------Songs list in the Queue Section ------------->
+        
+                <a href="">
+                    <div class="Queue-song-container">
+                        <div class="serial-no" ><p>05</p></div>
+        
+                        <div class="song-logo-div" > 
+                            <img class="song-logo" src="./Images/Queue/see.jpeg">
+                            <img class="playy" src="./Images/Logo/hov-red.svg"  >
+                        </div>
+        
+                        <div class="song-details">
+                        <h3 class="song-title">See You Again</h3>
+                        <p class="singer-name">Wiz Khalifa</p>
+                        </div>
+                        <div class="heart-icon"><i class="far fa-heart"></i></div>
+                    </div>
+                </a>
+        
+        
+                
+        <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>06</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/chain.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                <h3 class="song-title">Alan Walker: DarkSide</h3>
+                <p class="singer-name">ft. Au/Ra and Tomine Harket</p>
+                </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+            
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+            <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>07</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/dyn.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                    <h3 class="song-title">Dynamite</h3>
+                    <p class="singer-name">BTS</p>
+                    </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            </a>    
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+            <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>08</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/waka.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                    <h3 class="song-title">Waka Waka</h3>
+                    <p class="singer-name">Sakira</p>
+                    </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            </a>
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>09</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/cheap.png">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                <h3 class="song-title">Cheap Thrills</h3>
+                <p class="singer-name">Sia</p>
+                </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+
+            
+        <!-- -------------Songs list in the Queue Section ------------->
+            <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>10</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/us.jpeg">
+                    <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+                </div>
+
+                <div class="song-details">
+                    <h3 class="song-title">Used to be</h3>
+                    <p class="singer-name">Wiz Khalifa</p>
+                    </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            </a>
+
+        <!-- -------------Songs list in the Queue Section ------------->
+
+
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>11</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/chain.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                <h3 class="song-title">Alan Walker: DarkSide</h3>
+                <p class="singer-name">ft. Au/Ra and Tomine Harket</p>
+                </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>12</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/dyn.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                <h3 class="song-title">Dynamite</h3>
+                <p class="singer-name">BTS</p>
+                </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>    
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>13</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/waka.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                    <h3 class="song-title">Waka Waka</h3>
+                    <p class="singer-name">Sakira</p>
+                    </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+            </a>
+
+
+
+        <!-- -------------Songs list in the Queue Section ------------->
+
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>14</p></div>
+
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/cheap.png">
+                    <img class="playy" src="./Images/Logo/hov-green.svg"  >
+                </div>
+
+                <div class="song-details">
+                <h3 class="song-title">Cheap Thrills</h3>
+                <p class="singer-name">Sia</p>
+                </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+    
+  <!-- -------------Songs list in the Queue Section ------------->
+    <a href="">
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>15</p></div>
+  
+          <div class="song-logo-div" > 
+              <img class="song-logo" src="./Images/Queue/us.jpeg">
+              <img class="playy" src="./Images/Logo/hov-red.svg"  >
+          </div>
+  
+          <div class="song-details">
+            <h3 class="song-title">Used to be</h3>
+            <p class="singer-name">Wiz Khalifa</p>
+            </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
+      </div>
+    </a>
+  
+    <!-- -------------first song in the Queue Section ------------->
+        <a href="">
+            <div class="Queue-song-container">
+                <div class="serial-no" ><p>16</p></div>
+  
+                <div class="song-logo-div" > 
+                    <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+                    <img class="playy" src="./Images/Logo/hov-red.svg"  >   </div>
+  
+                <div class="song-details">
+                    <h3 class="song-title">Despacito</h3>
+                    <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+                  </div>
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+  
+  
+  
+  <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>17</p></div>
+  
+              <div class="song-logo-div" > 
+                  <img class="song-logo" src="./Images/Queue/shape.jpeg">
+                  <img class="playy" src="./Images/Logo/hov-red.svg"  >
+              </div>
+  
+              <div class="song-details">
+                <h3 class="song-title">Shape Of You</h3>
+                <p class="singer-name">ED Sheeran</p>
+                </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+        </a>
+  
+        
+  
+  <!-- -------------Songs list in the Queue Section ------------->
+        <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>18</p></div>
+  
+              <div class="song-logo-div" > 
+                <img class="song-logo" src="./Images/Queue/closer.jpeg">
+                <img class="playy" src="./Images/Logo/hov-red.svg"  >
+              </div>
+  
+              <div class="song-details">
+                <h3 class="song-title">Closer</h3>
+                <p class="singer-name">The Chainsmokers</p>
+              </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+        </a>
+  
+  
+    <!-- -------------Songs list in the Queue Section ------------->
+        <a href="#">
+            <div class="Queue-song-container"> 
+            <div class="serial-no" ><p>19</p></div>
+  
+            <div class="song-logo-div"> 
+                <img class="song-logo" src="./Images/Queue/letme.jpeg">
+                <img class="playy" src="./Images/Logo/hov-red.svg">
+            </div>
+  
+            <div class="song-details">
+                <h3 class="song-title">Let Me Love You</h3>
+                <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+            </div>
+  
+                <div class="heart-icon"><i class="far fa-heart"></i></div>
+              </div>
+          </a>
+  
+  
+  
+        <!-- -------------first song in the Queue Section ------------->
+        <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>20</p></div>
+  
+              <div class="song-logo-div" > 
+                  <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+                  <img class="playy" src="./Images/Logo/hov-red.svg"  >   </div>
+  
+              <div class="song-details">
+                  <h3 class="song-title">Despacito</h3>
+                  <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+                </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+      </a>
+  
+  
+  
+  <!-- -------------Songs list in the Queue Section ------------->
+      <a href="">
+        <div class="Queue-song-container">
+            <div class="serial-no" ><p>21</p></div>
+  
+            <div class="song-logo-div" > 
+                <img class="song-logo" src="./Images/Queue/shape.jpeg">
+                <img class="playy" src="./Images/Logo/hov-red.svg"  >
+            </div>
+  
+            <div class="song-details">
+              <h3 class="song-title">Shape Of You</h3>
+              <p class="singer-name">ED Sheeran</p>
+              </div>
+            <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+  
+      
+  
+  <!-- -------------Songs list in the Queue Section ------------->
+      <a href="">
+        <div class="Queue-song-container">
+            <div class="serial-no" ><p>22</p></div>
+  
+            <div class="song-logo-div" > 
+              <img class="song-logo" src="./Images/Queue/closer.jpeg">
+              <img class="playy" src="./Images/Logo/hov-red.svg"  >
+            </div>
+  
+            <div class="song-details">
+              <h3 class="song-title">Closer</h3>
+              <p class="singer-name">The Chainsmokers</p>
+            </div>
+            <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+  
+  
+  <!-- -------------Songs list in the Queue Section ------------->
+      <a href="#">
+          <div class="Queue-song-container"> 
+          <div class="serial-no" ><p>23</p></div>
+  
+          <div class="song-logo-div"> 
+              <img class="song-logo" src="./Images/Queue/letme.jpeg">
+              <img class="playy" src="./Images/Logo/hov-red.svg">
+          </div>
+  
+          <div class="song-details">
+              <h3 class="song-title">Let Me Love You</h3>
+              <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+          </div>
+  
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+  
+  
+        </div>
+    </aside>
+</div>
+
+
+
+
+
+<aside id="aside">
+    <div id="aside-info">
+        <span id="Header">Similar Artists</span>
+
+        <div id="queue-data-list">
+            <p>View All</p>
+        </div>
+  </div>
+    
+
+      
+<!--------- First Related Artist-------------- --> -->
+
+      <div class="similar-artist-container">
+        <a href="" class="playyy"> <img  src="./Images/Logo/hov-green.svg"> </a>
+        <a href="" ><img class="Latest-Release-Image" src="./Images/LatestRelease/shapeofyou.jpeg"></a>
+        
+        <div class="Latest-Release-info">
+            <h3 class="title-name">Shape of You</h3>
+            <p class="artist-name">Ed Sheeran</p>
+        </div>
+
+        <div class="duration">
+            <p>  4:41</p>
+
+        <!-- Dropdown menu for the three dotted button -->
+            <div class="dropdown">
+                <button class="dropbtn"> <a href=""><i class="far fa-ellipsis-h"></i></a> </button>
+                <div class="dropdown-content">
+                    <a href="#"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="#"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="#"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="#"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+<!----------[------ Second Related Artist-------------- -->
+    </div>
+    <div class="similar-artist-container">
+        <a href="" class="playyy"> <img  src="./Images/Logo/hov-green.svg"> </a>
+        <a href="" ><img class="Latest-Release-Image" src="./Images/LatestRelease/shapeofyou.jpeg"></a>
+        
+        <div class="Latest-Release-info">
+            <h3 class="title-name">Shape of You</h3>
+            <p class="artist-name">Ed Sheeran</p>
+        </div>
+
+        <div class="duration">
+            <p>  4:41</p>
+
+        <!-- Dropdown menu for the three dotted button -->
+            <div class="dropdown">
+                <button class="dropbtn"> <a href=""><i class="far fa-ellipsis-h"></i></a> </button>
+                <div class="dropdown-content">
+                    <a href="#"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="#"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="#"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="#"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+
+
+<!------------- THird Related Artist-------------- -->
+    <div class="similar-artist-container">
+        <a href="" class="playyy"> <img  src="./Images/Logo/hov-green.svg"> </a>
+        <a href="" ><img class="Latest-Release-Image" src="./Images/LatestRelease/shapeofyou.jpeg"></a>
+        
+        <div class="Latest-Release-info">
+            <h3 class="title-name">Shape of You</h3>
+            <p class="artist-name">Ed Sheeran</p>
+        </div>
+
+        <div class="duration">
+            <p>  4:41</p>
+
+        <!-- Dropdown menu for the three dotted button -->
+            <div class="dropdown">
+                <button class="dropbtn"> <a href=""><i class="far fa-ellipsis-h"></i></a> </button>
+                <div class="dropdown-content">
+                    <a href="#"> <i class="fas fa-play"></i> Play Now </a>
+                    <a href="#"> <i  id="plus-icon"class="fas fa-plus "></i> Add to Queue  </a>
+                    <a href="#"> <i id="playlist-icon" class="fas fa-music"></i> Add to Favourites  </a>
+                    <a href="#"> <i id="circle-icon" class="fas fa-info-circle "></i> Get Info  </a>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+
+<!-- ------------------------------Recently Played Tracks -->
+    <div id="recelty-played-info">
+        <span id="Header">Recently Played</span>
+
+        <div id="queue-data-list">
+            <p>View All</p>
+        </div>
+  </div>
+
+
+    <div id="Aside">
+
+      <!-- -------------first song in the Queue Section ------------->
+      <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>01</p></div>
+
+              <div class="song-logo-div" > 
+                  <img class="song-logo" src="./Images/Queue/despacito.jpeg">
+                  <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >   </div>
+
+              <div class="song-details">
+                  <h3 class="song-title">Despacito</h3>
+                  <p class="singer-name">Luis Fonsi feat. Daddy Yankee</p>
+                </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+      </a>
+
+
+
+<!-- -------------Songs list in the Queue Section ------------->
+      <a href="">
+        <div class="Queue-song-container">
+            <div class="serial-no" ><p>02</p></div>
+
+            <div class="song-logo-div" > 
+                <img class="song-logo" src="./Images/Queue/shape.jpeg">
+                <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+            </div>
+
+            <div class="song-details">
+              <h3 class="song-title">Shape Of You</h3>
+              <p class="singer-name">ED Sheeran</p>
+              </div>
+            <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+
+
+      <!-- -------------Songs list in the Queue Section ------------->
+      <a href="">
+        <div class="Queue-song-container">
+            <div class="serial-no" ><p>03</p></div>
+
+            <div class="song-logo-div" > 
+              <img class="song-logo" src="./Images/Queue/closer.jpeg">
+              <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+            </div>
+
+            <div class="song-details">
+              <h3 class="song-title">Closer</h3>
+              <p class="singer-name">The Chainsmokers</p>
+            </div>
+            <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+      </a>
+
+
+  <!-- -------------Songs list in the Queue Section ------------->
+      <a href="#">
+          <div class="Queue-song-container"> 
+          <div class="serial-no" ><p>04</p></div>
+
+          <div class="song-logo-div"> 
+              <img class="song-logo" src="./Images/Queue/letme.jpeg">
+              <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg">
+          </div>
+
+          <div class="song-details">
+              <h3 class="song-title">Let Me Love You</h3>
+              <p class="singer-name">DJ Snake feat. Justin Bieber</p>
+          </div>
+
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+            </div>
+        </a>
+
+  <!-- -------------Songs list in the Queue Section ------------->
+
+        <a href="">
+          <div class="Queue-song-container">
+              <div class="serial-no" ><p>05</p></div>
+
+              <div class="song-logo-div" > 
+                  <img class="song-logo" src="./Images/Queue/see.jpeg">
+                  <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+              </div>
+
+              <div class="song-details">
+                <h3 class="song-title">See You Again</h3>
+                <p class="singer-name">Wiz Khalifa</p>
+                </div>
+              <div class="heart-icon"><i class="far fa-heart"></i></div>
+          </div>
+        </a>
+
+
+      
+  <!-- -------------Songs list in the Queue Section ------------->
+
+
+      <div class="Queue-song-container">
+          <div class="serial-no" ><p>06</p></div>
+
+          <div class="song-logo-div" > <a href="">
+              <img class="song-logo" src="./Images/Queue/chain.jpeg">
+              <img class="playy" src="./Images/Logo/hov-green.svg"  >
+          </div>
+
+          <div class="song-details">
+              <h3 class="song-title">Alan Walker: DarkSide</h3>
+              <p class="singer-name">ft. Au/Ra and Tomine Harket</p>
+            </a>
+          </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+
+
+  <!-- -------------Songs list in the Queue Section ------------->
+        <div class="Queue-song-container">
+          <div class="serial-no" ><p>07</p></div>
+
+          <div class="song-logo-div" > <a href="">
+              <img class="song-logo" src="./Images/Queue/dyn.jpeg">
+              <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+          </div>
+
+          <div class="song-details">
+              <h3 class="song-title">Dynamite</h3>
+              <p class="singer-name">BTS</p>
+            </a>
+          </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+
+
+  <!-- -------------Songs list in the Queue Section ------------->
+        <div class="Queue-song-container">
+          <div class="serial-no" ><p>08</p></div>
+
+          <div class="song-logo-div" > <a href="">
+              <img class="song-logo" src="./Images/Queue/waka.jpeg">
+              <img class="playy" src="https://www.flaticon.com/premium-icon/icons/svg/440/440796.svg"  >
+          </div>
+
+          <div class="song-details">
+              <h3 class="song-title">Waka Waka</h3>
+              <p class="singer-name">Sakira</p>
+            </a>
+          </div>
+          <div class="heart-icon"><i class="far fa-heart"></i></div>
+        </div>
+  </aside>
+
+
+
+<!-------------------------------footer part contains music playback controls button------------------------->
+    <footer>
+
+      <!-- Contains 3 div as flex items -->
+      <div id="songs-info-container">
+          <img src="./Images/Queue/dark.jpeg" alt="Song-name">
+          <!-- Image-thumbnail -->
+        
+          <!-- About the Song -->
+          <div id="song-info">
+              <span id="song-name">Dark Side</span>
+              <p id="singer-name">Alan Walker</p>
+          </div>
+
+          <!-- Heart shape fav icon -->
+          <a href=""><i class="far fa-heart heart-pos"></i></a>
+
+      </div>
+
+
+
+      <!-- Middile divison conataining control buttons -->
+      <div id="player-button-container">
+          <div id="player-button-controller">
+              <a href=""><i class="far fa-random"></i></a>
+              <a href=""><i class="far fa-step-backward"></i></a>
+              <a href=""><i class="far fa-play-circle play-button"></i></a>
+              <a href=""><i class="far fa-step-forward"></i></a>
+              <a href=""><i class="far fa-repeat-alt"></i></a>
+          </div>
+
+          <!-- song timer(seeker) container -->
+          <div class="slidecontainer">
+              <p>2:19</p>
+              <input id="range" type="range" min="1" max="100" value="50">
+              <p>4:36</p>              
+          </div>
+      </div>
+
+
+      <!-- Third Div contaitng volume and fullscreen icons -->
+      <div id="volume-buttom-container">
+
+            <a href=""><i class="far fa-th-list"></i></a>
+            <a href=""><i class="far fa-headphones-alt"></i></a>
+            <a href="#"><i class="far fa-volume"></i></a>
+
+            <!-- Volume Slider -->
+            <input id="volume-slider" type="range" min="1" max="50" value="38">
+            <a href="#"><i class="far fa-expand"></i></a>
+
+      </div>
+
+  </footer>
+  
+</body>
+</html>

@@ -7,10 +7,11 @@
           display: none;
         }
         #Favourites{
-          font-size: 0.5vw;
+          font-size: 2.4vh;
+          font-family:   sans-serif;
           animation: none;
           margin-left: -5vw;
-          color:rgb(9, 214, 88)
+          color:rgb(246, 209, 235)
         }
         #profile{
           width:7vw;
@@ -126,9 +127,6 @@
       display: none;
     }
 
-    #Ninja-Studio-text{
-      display: inline;
-    }
 
 
     /* -------for bottom music control player--------- */
