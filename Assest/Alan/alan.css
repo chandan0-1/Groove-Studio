@@ -1,13 +1,11 @@
-body{
-  /* margin-left: 5vw; */
-}
+
 
 :root{
   --white-shade:#b8b9ba;
 }
 
 #artist-info{
-  /* padding:1vh; */
+
   width:62vw;
   height: 40vh;
   background-color: #141b41;
@@ -16,8 +14,7 @@ body{
 #artist-info h4,h5{
   margin-left: 2.5vw;
   font-size: 1vw;
-  /* font-family: sans-serif; */
-  /* color:var(--white-shade); */
+
   color:rgb(21, 223, 155);
   letter-spacing: 1px;
 }
@@ -35,11 +32,7 @@ body{
   flex-direction: row;
 }
 
-/* #follower{
-  position: relative;
-  right:0;
-  text-align: right;
-} */
+
 
 #desc{
   color:var(--white-shade);
@@ -52,7 +45,6 @@ body{
 }
 #description{
   color:white;
-  /* background-color: green; */
   margin :0px 2.5vw;
   display: flex;
   justify-content: space-between;
