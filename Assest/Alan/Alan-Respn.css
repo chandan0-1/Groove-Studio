@@ -1,57 +1,72 @@
+
+/* Below Media Query will help to reduce the Size of multiple
+ elements of the Artist Div when display will Reduced*/
+
 @media screen and ( max-width:1090px) , ( max-height:600px){
 
-  #artist{
-    width:92%;
-  }
-  #desc {
-    position: relative;
-    left:0;
-    
-  }
-  #songs-of-artist{
-    width:92%;
-  }
+      #artist{
+        width:92%;
+      }
+      #desc {
+        position: relative;
+        left:0;
+        
+      }
+      #songs-of-artist{
+        width:92%;
+      }
 }
 
 
+/* Below Media Query will help to reduce the Size of multiple
+ elements when widht and hieght will be reduced of the mentioned tags as a comment as above them when 
+ Size of the Screen will reduced to 400px for medium display presentation of the page */
+ /* Specially for moblie friendly devices */
 @media screen and ( max-width:400px) , ( max-height:400px){
-  #artist-info{
-    width: 92%;
-    height: 33vh;
-  }
- #desc{
-   font-size: 1vh;
- }
+      #artist-info{
+        width: 92%;
+        height: 33vh;
+      }
+    #desc{
+      font-size: 1vh;
+    }
 
- #artist img{
-   margin-left: 8vw;
-   margin-top: 2vh;
-   height:60vw;
-   width: 60vw;
- }
+    #artist img{
+      margin-left: 8vw;
+      margin-top: 2vh;
+      height:60vw;
+      width: 60vw;
+    }
 
- #artist{
-   margin-left: 5vw;
-   display: block;
- }
+    #artist{
+      margin-left: 5vw;
+      display: block;
+    }
 
- #songs-of-artist{
-   margin-top:25vh;
- }
+    #songs-of-artist{
+      margin-top:25vh;
+    }
 
 }
 
 
+ /* If window size will be less than 400px then only controls will be visible */
+  /* for very small display specially for mobile */
 @media screen and ( max-height:400px){
-  #artist-info h5{
-    display: none;
-    font-size: 0px;
-  }
+      #artist-info h5{
+        display: none;
+        font-size: 0px;
+      }
 }
+
+
+  /* -------------Resposive design for 600 X 600------- */
+  /* If window size will be less than 600 X 600 then only controls will be visible */
+  /* for very small display specially for mobile */
 
 @media screen and ( max-height:300px) and (max-width:200px){
-  #play-all-button{
-    display: none;
-  }
+    #play-all-button{
+      display: none;
+    }
 
 }
